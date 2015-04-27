@@ -1,0 +1,16 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
+<script type="text/javascript">
+$(document).ready(function(){
+var today = new Date();
+	var currentMonth = today.getMonth();
+	var currentDate = today.getDate();
+					var mapdate = ("0" + (currentMonth + 1)).slice(-2) + '' +("0" + (currentDate - 1)).slice(-2);
+	
+	$('#canfiredangermap').attr("src", 'http://cfs.nrcan.gc.ca/firedata/maps/fwi_fbp/2015/fdr15'+mapdate+'f.png');
+	});
+</script>
+	
+				<img id="canfiredangermap" src=""/>
+	
+        
+
